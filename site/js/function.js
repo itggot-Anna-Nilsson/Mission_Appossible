@@ -1,16 +1,12 @@
+
 function slide(){
-  var element = document.getElementById("navi");
-  element.classList.toggle("menu");
-  element.classList.toggle("menuOut");
+  var element = document.querySelector("#navi");
   console.log("slide");
-
+  if(!element.classList.contains('menuhidden') && !element.classList.contains('menuvisible')){
+    element.classList.toggle('menuvisible');
+  }
+  else {
+    element.classList.toggle('menuvisible');
+    element.classList.toggle('menuhidden');
+  }
 }
-
-function pic(){
-  var element = document.getElementById("ham");
-  element.classList.remove("black");
-  element.classList.add("white");
-  console.log("pic");
-
-}
-//alert("hello")
