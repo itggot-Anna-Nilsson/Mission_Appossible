@@ -5,6 +5,7 @@
 		<title>Teleport</title>
 		<link href="./css/main.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	</head>
@@ -15,20 +16,25 @@
 
 		<div class="menu" id="navi">
 			<nav>
-				<a class="meny press" href="index.html">Main</a>
-				<a class="meny" href="about.html">About</a>
-				<a class="meny" href="products.html">Products</a>
-				<a class="meny" href="contact.html">Contact</a>
+				<ul>
+				<li><a class="meny press" href="index.html"> <i class="material-icons">favorite</i> Favorites</a></li>
+				<li><a class="meny" href="bookmarks.html"> <i class="material-icons">bookmark</i> Bookmarks</a></li>
+				<li><a class="meny" href="map.html"> <i class="material-icons">map</i> Map</a></li>
+				<li><a class="meny" href="add_location.html"> <i class="material-icons">location_on</i> Add Location</a></li>
+				<!-- add location is mobile only, fix in css -->
+				<li><a class="meny" href="recent.html"> <i class="material-icons">history</i> Recent</a></li>
+				<li><a class="meny" href="settings.html"> <i class="material-icons">settings</i> Settings</a></li>
+				</ul>
+
 			</nav>
 		</div>
 		<div class="arrow" id="arr">
-			<img class="button black" id="ham" src="./img/menu_button.svg" onclick="slide()" onclick="pic()">
-		<!-- funktionen ovan fungerar låt stå -->
+			<i class="material-icons md-18 mbutton" onclick="slide()" >menu</i>
 		</div>
 
 		<%=yield%>
 
-		<footer>  </footer>
+		<footer> banan </footer>
   </body>
     <script src="./js/function.js"></script>
 </html>
