@@ -70,6 +70,48 @@ footer{
   }
 }
 
+.darkbox{
+  display: none;
+}
+
+.opacity0{
+  background-color: black;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  animation: fadein 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+.opacity50{
+  animation: fadeout 0.2s 1;
+  animation-fill-mode: forwards;
+  background-color: black;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 
 .arrow {
   position: absolute;
