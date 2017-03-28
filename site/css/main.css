@@ -32,8 +32,8 @@ footer{
   justify-content: center;
   background-color: #FFFFFF;
   height:100vh;
-  width: 250px;
-  left: -250px;
+  width: calc(100vw - 56px);
+  left: calc((100vw - 56px) * -1);
   animation: pulse 0.5s 1;
 }
 
@@ -50,7 +50,7 @@ footer{
 
 @keyframes show{
   0% {
-    left: -250px;
+    left: calc((100vw - 56px)* -1);
   }
   100% {
     left: 0px;
@@ -66,7 +66,7 @@ footer{
     left: 0px;
   }
   100% {
-    left: -250px;
+    left: calc((100vw - 56px)* -1);
   }
 }
 
