@@ -26,12 +26,20 @@ footer{
   justify-content: center;
   bottom: 0;
 }
+
+.Abox{
+  width: calc(100vw - 56px);
+  height: 50px;
+  background-color: black;
+}
+
 .menu {
   display: flex;
   position: absolute;
   justify-content: center;
   background-color: #FFFFFF;
   height:100vh;
+  top: 0;
   width: calc(100vw - 56px);
   left: calc((100vw - 56px) * -1);
   animation: pulse 0.5s 1;
@@ -50,7 +58,7 @@ footer{
 
 @keyframes show{
   0% {
-    left: calc(-(100vw-56px));
+    left: calc((100vw - 56px)* -1);
   }
   100% {
     left: 0px;
@@ -66,7 +74,7 @@ footer{
     left: 0px;
   }
   100% {
-    left: calc(-(100vw-56px));
+    left: calc((100vw - 56px)* -1);
   }
 }
 
@@ -79,6 +87,7 @@ footer{
   opacity: 0.5;
   width: 100vw;
   height: 100vh;
+  top: 0;
   position: fixed;
   animation: fadein 0.5s 1;
   animation-fill-mode: forwards;
