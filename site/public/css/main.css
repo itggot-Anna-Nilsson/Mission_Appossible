@@ -11,7 +11,7 @@ body{
 
 li{
   list-style-type: none;
-margin-left: -50px;
+  /*margin-left: -50px;*/
 }
 
 footer{
@@ -28,8 +28,10 @@ footer{
 }
 
 .Abox{
+  top: 0;
+  left: 0;
   width: calc(100vw - 56px);
-  height: 50px;
+  height: 150px;
   background-color: black;
 }
 
@@ -152,3 +154,45 @@ a:hover,active {
   text-decoration: none;
   font-size: 25px;
 }
+
+/*@media (min-width: 800px){
+
+.menu {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height:100vh;
+  top: 0;
+  width:354px;
+  left: -354px;
+  animation: pulse 0.5s 1;
+}
+
+.menuvisible {
+  animation: show 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show{
+  0% {
+    left: -354px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.menuhidden{
+  animation: hide 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide{
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -354px;
+  }
+}
+}*/
