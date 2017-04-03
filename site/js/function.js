@@ -21,3 +21,8 @@ function slide(){
     element.classList.toggle('menuhidden');
   }
 }
+
+var x = location.pathname.split('/');
+var y = x[x.length - 1];
+var z = document.querySelector("a[href='" + y + "']");
+z.classList.add('current_page');
