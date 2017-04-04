@@ -27,6 +27,7 @@ var y = x[x.length - 1];
 var z = document.querySelector("a[href='" + y + "']");
 z.classList.add('current_page');
 
+
 if(y == 'favorites.html'){
   document.querySelector('#title').innerHTML = 'Favorites';
 }
