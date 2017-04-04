@@ -130,32 +130,12 @@ footer{
   }
 }
 
-.map{
-  display: flex;
-  width: 50%;
-  height: 50%;
-  justify-content: center;
-  align-items: center;
-  /*verkar inte fungera av någon anledning :/*/
-}
-
 .arrow {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 20px;
+  top: 14px;
   color: white;
 }
-
-/*.menu{
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #212121;
-  height:100vh;
-  width: 167px;
-}*/
 
 a {
   color: #000000;
@@ -170,7 +150,26 @@ a:hover,active {
   font-size: 25px;
 }
 
-/*@media (min-width: 800px){
+/*maps.html & add_location.html page specific css*/
+.map_outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25vw;
+}
+
+.map{
+  margin-top: 100px;
+}
+
+.map_text{
+  width: 50vw;
+  justify-content: center;
+  text-align: center;
+}
+
+/*För större enheter, ipad och dator*/
+@media (min-width: 700px){
 
 .menu {
   display: flex;
@@ -210,4 +209,4 @@ a:hover,active {
     left: -354px;
   }
 }
-}*/
+}
