@@ -1,6 +1,7 @@
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #E0EDD4;
 }
 
 .toolbar {
@@ -113,10 +114,6 @@ footer{
 .opacity50{
   animation: fadeout 0.2s 1;
   animation-fill-mode: forwards;
-  /*background-color: black;
-  opacity: 0.5;
-  width: 100vw;
-  height: 100vh;*/
   display: none;
   position: fixed;
 }
@@ -150,16 +147,52 @@ a:hover,active {
   font-size: 25px;
 }
 
+#title{
+  position: absolute;
+  color: white;
+  top: 14px;
+  left: 60px;
+  margin: 0;
+}
+
+/*favorites.html and recent.html page specific css*/
+
+.card_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+
 /*maps.html & add_location.html page specific css*/
 .map_outer{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-left: 25vw;
 }
 
 .map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .map_text{
@@ -181,6 +214,14 @@ a:hover,active {
   width:354px;
   left: -354px;
   animation: pulse 0.5s 1;
+}
+
+.Abox{
+  top: 0;
+  left: -354px;
+  width: 354px;
+  height: 150px;
+  background-color: black;
 }
 
 .menuvisible {
