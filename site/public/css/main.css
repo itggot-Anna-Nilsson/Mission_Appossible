@@ -244,6 +244,16 @@ a:hover,active {
   margin: 20px;
 }
 
+.drop_down_container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.li_drop{
+  margin: 0;
+}
+
 /*maps.html & add_location.html page specific css*/
 .map_outer{
   display: flex;
