@@ -200,13 +200,49 @@ a:hover,active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+  width: 85vw;
   background-color: white;
   margin: 5px;
   padding: 20px;
   box-shadow: 1px 2px 15px 0;
 }
 
+.Action_buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.buttons {
+  color: #dd2c00;
+  margin: 10px;
+}
+
+/*settings.html page specific css*/
+
+.settings_container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.settings{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.off{
+ margin: 20px;
+}
+
+.on{
+  color: #dd2c00;
+  margin: 20px;
+}
 
 /*maps.html & add_location.html page specific css*/
 .map_outer{
@@ -288,4 +324,17 @@ a:hover,active {
 .large_card_pic{
   width: 400px;
 }
+
+.large_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 5px;
+  padding: 20px;
+  width: 600px;
+  height: 500px;
+  box-shadow: 1px 2px 15px 0;
+}
+
 }
