@@ -49,5 +49,25 @@ function onoff() {
   document.querySelector('#instant').classList.toggle('off');
   document.querySelector('#delay').classList.toggle('on');
   document.querySelector('#delay').classList.toggle('off');
+}
 
+function settings_locations() {
+  document.querySelector('#locations_on').classList.toggle('on');
+  document.querySelector('#locations_on').classList.toggle('off');
+  document.querySelector('#locations_off').classList.toggle('on');
+  document.querySelector('#locations_off').classList.toggle('off');
+}
+
+function settings_quantum(){
+  document.querySelector('#quantum_on').classList.toggle('on');
+  document.querySelector('#quantum_on').classList.toggle('off');
+  document.querySelector('#quantum_off').classList.toggle('on');
+  document.querySelector('#quantum_off').classList.toggle('off');
+}
+
+function settings_oxygen() {
+  document.querySelector('#oxygen_on').classList.toggle('on');
+  document.querySelector('#oxygen_on').classList.toggle('off');
+  document.querySelector('#oxygen_off').classList.toggle('on');
+  document.querySelector('#oxygen_off').classList.toggle('off');
 }

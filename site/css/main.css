@@ -240,22 +240,16 @@ a:hover,active {
 .off{
  margin: 20px;
  color: #000;
+ width: 50px;
 }
 
 .on{
   color: #dd2c00;
   margin: 20px;
+  width: 50px;
 }
 
-.drop_down_container{
-  display: flex;
-  flex-direction: column;
 
-}
-
-.li_drop{
-  margin: 0;
-}
 
 /*maps.html & add_location.html page specific css*/
 .map_outer{
