@@ -43,3 +43,11 @@ else if(y == 'recent.html'){
 else if(y == 'settings.html'){
   document.querySelector('#title').innerHTML = 'Settings';
 }
+
+function onoff() {
+  document.querySelector('#instant').classList.toggle('on');
+  document.querySelector('#instant').classList.toggle('off');
+  document.querySelector('#delay').classList.toggle('on');
+  document.querySelector('#delay').classList.toggle('off');
+
+}
